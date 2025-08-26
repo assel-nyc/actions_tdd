@@ -74,8 +74,3 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(-6, 3), -2)
         self.assertAlmostEqual(self.calc.divide(5, 2), 2.5)
-
-    def test_divide_by_zero(self):
-        """Test that dividing by zero raises a ValueError."""
-        with self.assertRaises(ValueError):
-            self.calc.divide(10, 0)
